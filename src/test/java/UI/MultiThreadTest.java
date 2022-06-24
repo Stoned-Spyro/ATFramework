@@ -1,16 +1,18 @@
 package UI;
 
 import common.DriverFactory;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.pageFactory.HomePage;
 import pages.pageFactory.ResultsPage;
+import pages.pageFactory.TopicPage;
 
 public class MultiThreadTest {
     @DataProvider
     public static Object[][] browserDataProvider(){
         return new Object[][]{
-                {"chrome"},
+               // {"chrome"},
                 {"chrome"}
         };
     }
@@ -21,6 +23,7 @@ public class MultiThreadTest {
         System.out.println(browserName);
         HomePage homePage = new HomePage();
         ResultsPage resultsPage = new ResultsPage();
+        TopicPage topicPage = new TopicPage();
 
         homePage
                 .openWebPage()
@@ -28,6 +31,7 @@ public class MultiThreadTest {
 
         resultsPage.redirect();
 
+        Assert.assertTrue(topicPage.isOpen());
     }
 
 

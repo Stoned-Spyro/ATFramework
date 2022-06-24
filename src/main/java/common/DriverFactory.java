@@ -28,7 +28,6 @@ public class DriverFactory {
             System.out.println("created befault driver");
             DriverFactory.initDriver("chrome");
         }
-        DRIVER_INSTANCE.get().manage().timeouts().implicitlyWait(IMPLICIT_WAIT,TimeUnit.SECONDS);
         return DRIVER_INSTANCE.get();
     }
 
