@@ -1,0 +1,1 @@
+{"uuid":"e5346e40-f3c7-4b02-a2bb-194c5a3aacd8","name":"ATFramework","children":["d9affd71-86b9-4f94-9cd5-c89f5013e7bf"],"befores":[],"afters":[{"name":"clearCookies","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1656077835633,"stop":1656077836472}],"start":1656077829607,"stop":1656077836473}

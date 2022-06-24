@@ -15,7 +15,6 @@ public class SeleniumEasyHomePage extends BasePage{
     private final By searchField = By.xpath("//*[@id=\"edit-search-block-form--2\"]");
     private final By searchButtom = By.xpath("//*[@id=\"search-block-form\"]/div/div/div[1]/span/button");
     private final By mavenTopics = By.xpath("//*[@id=\"navbar-collapse\"]/nav/ul/li[4]/a");
-    private final String searchingValue = "web testing";
 
     public SeleniumEasyHomePage openJavaGuide(){
         driver.findElement(currentOption).click();
@@ -28,7 +27,7 @@ public class SeleniumEasyHomePage extends BasePage{
         return this;
     }
 
-    public SeleniumEasyHomePage searchGuide(){
+    public SeleniumEasyHomePage searchGuide(String searchingValue){
         WebElement searchFieldElement = driver.findElement(searchField);
         searchFieldElement.sendKeys(searchingValue);
         driver.findElement(searchButtom).click();
