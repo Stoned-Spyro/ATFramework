@@ -1,0 +1,6 @@
+cd D:\AQAFramework\ATFramework\performance\jmeter\bin
+
+jmeter -g D:\AQAFramework\ATFramework\performance\result.csv -o D:\AQAFramework\ATFramework\performance\HTMLReport
+
+jmeter -n -t D:\AQAFramework\ATFramework\performance\AquaQualityPerfomanceTest.jmx -Jduration=300 -JthreadsNumber=7
+

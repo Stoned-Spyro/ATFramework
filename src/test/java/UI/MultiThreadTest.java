@@ -12,7 +12,7 @@ public class MultiThreadTest {
     @DataProvider
     public static Object[][] browserDataProvider(){
         return new Object[][]{
-               // {"chrome"},
+                {"chrome"},
                 {"chrome"}
         };
     }
